@@ -15,7 +15,7 @@ console.log(guardarSuma2) */
 // callback
 
 function suma(a, b, callback) {
-    let resultado = a + b
+    const resultado = a + b
     callback(resultado)
 }
 
@@ -24,3 +24,14 @@ function callOtravez(resultado) {
 }
 
 suma(1, 2, callOtravez)
+
+const noviaLokis = (a, b) => {
+    console.log("Mi novia esta lokis")
+    console.log(a + b) 
+}
+
+noviaLokis(1, 5)
+
+suma(3, 5, function (resultado) {
+    console.log("El resultado es: ", resultado) 
+})
